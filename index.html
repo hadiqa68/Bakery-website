@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Haven Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/Capture.PNG" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Sweet Haven ♡</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="cartBtn">🛍 Cart (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="script">Freshly baked with love</p>
+            <h1>Sweet Moments<br>Made Better.</h1>
+            <p>Cakes, cupcakes and delicious treats made with love.</p>
+            <a href="#products" class="btn">Explore Our Menu →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                 alt="Beautiful celebration cake">
+        </div>
+    </section>
+
+    <section class="categories">
+        <div>🎂 <h3>Cakes</h3></div>
+        <div>🧁 <h3>Cupcakes</h3></div>
+        <div>🍪 <h3>Cookies</h3></div>
+        <div>🍩 <h3>Donuts</h3></div>
+        <div>🥐 <h3>Pastries</h3></div>
+    </section>
+
+    <section class="products" id="products">
+        <p class="script">Made fresh every day</p>
+        <h2>Our Best Sellers</h2>
+
+        <input type="text" id="search"
+               placeholder="Search your favourite dessert...">
+
+        <div class="product-container">
+            
+<!-- 5 -->
+<div class="product-card" data-name="Red Velvet Cake">
+    <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=600&q=80" alt="Red velvet cake">
+    <h3>Red Velvet Cake</h3>
+    <p>Soft red velvet with creamy frosting.</p>
+    <h4>Rs. 2,600</h4>
+    <button class="add-btn" data-price="2600">Add to Cart</button>
+</div>
+
+<!-- 6 -->
+<div class="product-card" data-name="Black Forest Cake">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Black forest cake">
+    <h3>Black Forest Cake</h3>
+    <p>Chocolate, cream and cherry flavours.</p>
+    <h4>Rs. 2,500</h4>
+    <button class="add-btn" data-price="2500">Add to Cart</button>
+</div>
+
+<!-- 7 -->
+<div class="product-card" data-name="Strawberry Cake">
+    <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=600&q=80" alt="Strawberry cake">
+    <h3>Strawberry Cake</h3>
+    <p>Strawberry cream in every slice.</p>
+    <h4>Rs. 2,300</h4>
+    <button class="add-btn" data-price="2300">Add to Cart</button>
+</div>
+
+<!-- 8 -->
+<div class="product-card" data-name="Vanilla Birthday Cake">
+    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=600&q=80" alt="Vanilla birthday cake">
+    <h3>Vanilla Birthday Cake</h3>
+    <p>A classic cake for special days.</p>
+    <h4>Rs. 2,200</h4>
+    <button class="add-btn" data-price="2200">Add to Cart</button>
+</div>
+
+<!-- 9 -->
+<div class="product-card" data-name="Chocolate Fudge Cake">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Chocolate fudge cake">
+    <h3>Chocolate Fudge Cake</h3>
+    <p>Rich and fudgy chocolate delight.</p>
+    <h4>Rs. 2,700</h4>
+    <button class="add-btn" data-price="2700">Add to Cart</button>
+</div>
+
+<!-- 10 -->
+<div class="product-card" data-name="Lemon Cake">
+    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Lemon cake">
+    <h3>Lemon Cake</h3>
+    <p>Light cake with a citrus flavour.</p>
+    <h4>Rs. 1,800</h4>
+    <button class="add-btn" data-price="1800">Add to Cart</button>
+</div>
+
+<!-- 11 -->
+<div class="product-card" data-name="Caramel Cake">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Caramel dessert">
+    <h3>Caramel Cake</h3>
+    <p>Sweet caramel-inspired layers.</p>
+    <h4>Rs. 2,400</h4>
+    <button class="add-btn" data-price="2400">Add to Cart</button>
+</div>
+
+<!-- 12 -->
+<div class="product-card" data-name="Coffee Cake">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Coffee cake">
+    <h3>Coffee Cake</h3>
+    <p>A delicious treat for coffee lovers.</p>
+    <h4>Rs. 2,100</h4>
+    <button class="add-btn" data-price="2100">Add to Cart</button>
+</div>
+
+<!-- 13 -->
+<div class="product-card" data-name="Oreo Cake">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Chocolate cookie cake">
+    <h3>Oreo Cake</h3>
+    <p>Chocolate cake with cookie cream.</p>
+    <h4>Rs. 2,600</h4>
+    <button class="add-btn" data-price="2600">Add to Cart</button>
+</div>
+
+<!-- 14 -->
+<div class="product-card" data-name="Pineapple Cake">
+    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Pineapple cake">
+    <h3>Pineapple Cake</h3>
+    <p>Fresh, fruity and creamy.</p>
+    <h4>Rs. 2,000</h4>
+    <button class="add-btn" data-price="2000">Add to Cart</button>
+</div>
+
+<!-- 15 -->
+<div class="product-card" data-name="Chocolate Cupcakes">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Chocolate cupcakes">
+    <h3>Chocolate Cupcakes</h3>
+    <p>Chocolate cupcakes with frosting.</p>
+    <h4>Rs. 850</h4>
+    <button class="add-btn" data-price="850">Add to Cart</button>
+</div>
+
+<!-- 16 -->
+<div class="product-card" data-name="Strawberry Cupcakes">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Strawberry cupcakes">
+    <h3>Strawberry Cupcakes</h3>
+    <p>Pink frosting and strawberry sweetness.</p>
+    <h4>Rs. 900</h4>
+    <button class="add-btn" data-price="900">Add to Cart</button>
+</div>
+
+<!-- 17 -->
+<div class="product-card" data-name="Red Velvet Cupcakes">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Red velvet cupcakes">
+    <h3>Red Velvet Cupcakes</h3>
+    <p>Velvety cupcakes with cream topping.</p>
+    <h4>Rs. 950</h4>
+    <button class="add-btn" data-price="950">Add to Cart</button>
+</div>
+
+<!-- 18 -->
+<div class="product-card" data-name="Caramel Cupcakes">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Caramel cupcakes">
+    <h3>Caramel Cupcakes</h3>
+    <p>Soft cupcakes with caramel flavour.</p>
+    <h4>Rs. 900</h4>
+    <button class="add-btn" data-price="900">Add to Cart</button>
+</div>
+
+<!-- 19 -->
+<div class="product-card" data-name="Lemon Cupcakes">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Lemon cupcakes">
+    <h3>Lemon Cupcakes</h3>
+    <p>Fresh lemon flavour with sweet icing.</p>
+    <h4>Rs. 800</h4>
+    <button class="add-btn" data-price="800">Add to Cart</button>
+</div>
+
+<!-- 20 -->
+<div class="product-card" data-name="Mini Cupcake Box">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Mini cupcakes">
+    <h3>Mini Cupcake Box</h3>
+    <p>A box of little sweet bites.</p>
+    <h4>Rs. 700</h4>
+    <button class="add-btn" data-price="700">Add to Cart</button>
+</div>
+
+<!-- 21 -->
+<div class="product-card" data-name="Chocolate Chip Cookies">
+    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Chocolate chip cookies">
+    <h3>Chocolate Chip Cookies</h3>
+    <p>Classic cookies loaded with chocolate.</p>
+    <h4>Rs. 600</h4>
+    <button class="add-btn" data-price="600">Add to Cart</button>
+</div>
+
+<!-- 22 -->
+<div class="product-card" data-name="Double Chocolate Cookies">
+    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Double chocolate cookies">
+    <h3>Double Chocolate Cookies</h3>
+    <p>Extra chocolate for chocolate lovers.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 23 -->
+<div class="product-card" data-name="Butter Cookies">
+    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Butter cookies">
+    <h3>Butter Cookies</h3>
+    <p>Simple, crisp and buttery.</p>
+    <h4>Rs. 500</h4>
+    <button class="add-btn" data-price="500">Add to Cart</button>
+</div>
+
+<!-- 24 -->
+<div class="product-card" data-name="Oatmeal Cookies">
+    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Oatmeal cookies">
+    <h3>Oatmeal Cookies</h3>
+    <p>Golden cookies with a lovely texture.</p>
+    <h4>Rs. 550</h4>
+    <button class="add-btn" data-price="550">Add to Cart</button>
+</div>
+
+<!-- 25 -->
+<div class="product-card" data-name="Almond Cookies">
+    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Almond cookies">
+    <h3>Almond Cookies</h3>
+    <p>Crunchy cookies with almond flavour.</p>
+    <h4>Rs. 700</h4>
+    <button class="add-btn" data-price="700">Add to Cart</button>
+</div>
+
+<!-- 26 -->
+<div class="product-card" data-name="Pink Sprinkle Donuts">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Pink sprinkle donuts">
+    <h3>Pink Sprinkle Donuts</h3>
+    <p>Pretty pink glaze with colourful sprinkles.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 27 -->
+<div class="product-card" data-name="Chocolate Donuts">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Chocolate donuts">
+    <h3>Chocolate Donuts</h3>
+    <p>Soft donuts with chocolate glaze.</p>
+    <h4>Rs. 700</h4>
+    <button class="add-btn" data-price="700">Add to Cart</button>
+</div>
+
+<!-- 28 -->
+<div class="product-card" data-name="Classic Glazed Donuts">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Glazed donuts">
+    <h3>Classic Glazed Donuts</h3>
+    <p>Soft donuts with a sweet glaze.</p>
+    <h4>Rs. 550</h4>
+    <button class="add-btn" data-price="550">Add to Cart</button>
+</div>
+
+<!-- 29 -->
+<div class="product-card" data-name="Strawberry Donuts">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Strawberry donuts">
+    <h3>Strawberry Donuts</h3>
+    <p>Fruity glaze with a sweet finish.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 30 -->
+<div class="product-card" data-name="Donut Party Box">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Donut party box">
+    <h3>Donut Party Box</h3>
+    <p>A variety of delicious donuts.</p>
+    <h4>Rs. 1,200</h4>
+    <button class="add-btn" data-price="1200">Add to Cart</button>
+</div>
+
+<!-- 31 -->
+<div class="product-card" data-name="Butter Croissant">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Butter croissant">
+    <h3>Butter Croissant</h3>
+    <p>Flaky pastry baked until golden.</p>
+    <h4>Rs. 350</h4>
+    <button class="add-btn" data-price="350">Add to Cart</button>
+</div>
+
+<!-- 32 -->
+<div class="product-card" data-name="Chocolate Croissant">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Chocolate croissant">
+    <h3>Chocolate Croissant</h3>
+    <p>Flaky pastry with chocolate filling.</p>
+    <h4>Rs. 450</h4>
+    <button class="add-btn" data-price="450">Add to Cart</button>
+</div>
+
+<!-- 33 -->
+<div class="product-card" data-name="Cinnamon Rolls">
+    <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" alt="Cinnamon rolls">
+    <h3>Cinnamon Rolls</h3>
+    <p>Soft rolls with warm cinnamon flavour.</p>
+    <h4>Rs. 500</h4>
+    <button class="add-btn" data-price="500">Add to Cart</button>
+</div>
+
+<!-- 34 -->
+<div class="product-card" data-name="Apple Pie">
+    <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" alt="Apple pie">
+    <h3>Apple Pie</h3>
+    <p>A comforting fruit-filled pastry.</p>
+    <h4>Rs. 800</h4>
+    <button class="add-btn" data-price="800">Add to Cart</button>
+</div>
+
+<!-- 35 -->
+<div class="product-card" data-name="Chocolate Brownies">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Chocolate brownies">
+    <h3>Chocolate Brownies</h3>
+    <p>Rich, fudgy and full of chocolate.</p>
+    <h4>Rs. 750</h4>
+    <button class="add-btn" data-price="750">Add to Cart</button>
+</div>
+
+<!-- 36 -->
+<div class="product-card" data-name="Walnut Brownies">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Walnut brownies">
+    <h3>Walnut Brownies</h3>
+    <p>Fudgy brownies with crunchy walnuts.</p>
+    <h4>Rs. 850</h4>
+    <button class="add-btn" data-price="850">Add to Cart</button>
+</div>
+
+<!-- 37 -->
+<div class="product-card" data-name="Vanilla Muffins">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Vanilla muffins">
+    <h3>Vanilla Muffins</h3>
+    <p>Light muffins with a vanilla aroma.</p>
+    <h4>Rs. 500</h4>
+    <button class="add-btn" data-price="500">Add to Cart</button>
+</div>
+
+<!-- 38 -->
+<div class="product-card" data-name="Blueberry Muffins">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Blueberry muffins">
+    <h3>Blueberry Muffins</h3>
+    <p>Soft muffins with fruity sweetness.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 39 -->
+<div class="product-card" data-name="Chocolate Muffins">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Chocolate muffins">
+    <h3>Chocolate Muffins</h3>
+    <p>Chocolate muffins for a sweet break.</p>
+    <h4>Rs. 600</h4>
+    <button class="add-btn" data-price="600">Add to Cart</button>
+</div>
+
+<!-- 40 -->
+<div class="product-card" data-name="Strawberry Tart">
+    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Strawberry dessert">
+    <h3>Strawberry Tart</h3>
+    <p>A delicate pastry with a fruity topping.</p>
+    <h4>Rs. 700</h4>
+    <button class="add-btn" data-price="700">Add to Cart</button>
+</div>
+
+<!-- 41 -->
+<div class="product-card" data-name="Fruit Tart">
+    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Fruit tart">
+    <h3>Fruit Tart</h3>
+    <p>Fresh fruit with a creamy pastry base.</p>
+    <h4>Rs. 750</h4>
+    <button class="add-btn" data-price="750">Add to Cart</button>
+</div>
+
+<!-- 42 -->
+<div class="product-card" data-name="Chocolate Eclairs">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Chocolate eclair inspired pastry">
+    <h3>Chocolate Eclairs</h3>
+    <p>Creamy filling and chocolate topping.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 43 -->
+<div class="product-card" data-name="Cream Puffs">
+    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Cream dessert">
+    <h3>Cream Puffs</h3>
+    <p>Light pastry filled with creamy goodness.</p>
+    <h4>Rs. 600</h4>
+    <button class="add-btn" data-price="600">Add to Cart</button>
+</div>
+
+<!-- 44 -->
+<div class="product-card" data-name="Classic Cheesecake">
+    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80" alt="Classic cheesecake">
+    <h3>Classic Cheesecake</h3>
+    <p>Smooth, rich and creamy cheesecake.</p>
+    <h4>Rs. 2,200</h4>
+    <button class="add-btn" data-price="2200">Add to Cart</button>
+</div>
+
+<!-- 45 -->
+<div class="product-card" data-name="Blueberry Cheesecake">
+    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80" alt="Blueberry cheesecake">
+    <h3>Blueberry Cheesecake</h3>
+    <p>Creamy cheesecake with berry flavour.</p>
+    <h4>Rs. 2,500</h4>
+    <button class="add-btn" data-price="2500">Add to Cart</button>
+</div>
+
+<!-- 46 -->
+<div class="product-card" data-name="Chocolate Tart">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Chocolate tart">
+    <h3>Chocolate Tart</h3>
+    <p>Silky chocolate in a crisp pastry shell.</p>
+    <h4>Rs. 900</h4>
+    <button class="add-btn" data-price="900">Add to Cart</button>
+</div>
+
+<!-- 47 -->
+<div class="product-card" data-name="Banana Bread">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Freshly baked bread">
+    <h3>Banana Bread</h3>
+    <p>Moist, soft and perfect with tea.</p>
+    <h4>Rs. 650</h4>
+    <button class="add-btn" data-price="650">Add to Cart</button>
+</div>
+
+<!-- 48 -->
+<div class="product-card" data-name="Garlic Bread">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Fresh bread">
+    <h3>Garlic Bread</h3>
+    <p>Savoury bread with garlic flavour.</p>
+    <h4>Rs. 450</h4>
+    <button class="add-btn" data-price="450">Add to Cart</button>
+</div>
+
+<!-- 49 -->
+<div class="product-card" data-name="Mini Pizza">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+    <h3>Mini Pizza</h3>
+    <p>A savoury bakery favourite.</p>
+    <h4>Rs. 350</h4>
+    <button class="add-btn" data-price="350">Add to Cart</button>
+</div>
+
+<!-- 50 -->
+<div class="product-card" data-name="Chicken Patties">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Golden pastry">
+    <h3>Chicken Patties</h3>
+    <p>Flaky pastry with savoury filling.</p>
+    <h4>Rs. 180</h4>
+    <button class="add-btn" data-price="180">Add to Cart</button>
+</div>
+
+<!-- 51 -->
+<div class="product-card" data-name="Vegetable Puffs">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Pastry puffs">
+    <h3>Vegetable Puffs</h3>
+    <p>Crispy pastry with vegetable filling.</p>
+    <h4>Rs. 150</h4>
+    <button class="add-btn" data-price="150">Add to Cart</button>
+</div>
+
+<!-- 52 -->
+<div class="product-card" data-name="Cheese Croissant">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Croissant">
+    <h3>Cheese Croissant</h3>
+    <p>Flaky layers with a cheesy centre.</p>
+    <h4>Rs. 400</h4>
+    <button class="add-btn" data-price="400">Add to Cart</button>
+</div>
+
+<!-- 53 -->
+<div class="product-card" data-name="Coconut Macaroons">
+    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Small bakery cookies">
+    <h3>Coconut Macaroons</h3>
+    <p>Sweet coconut bites with a golden finish.</p>
+    <h4>Rs. 550</h4>
+    <button class="add-btn" data-price="550">Add to Cart</button>
+</div>
+
+<!-- 54 -->
+<div class="product-card" data-name="Mixed Dessert Box">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Mixed bakery treats">
+    <h3>Mixed Dessert Box</h3>
+    <p>A sweet assortment for sharing.</p>
+    <h4>Rs. 1,500</h4>
+    <button class="add-btn" data-price="1500">Add to Cart</button>
+</div>
+
+            <div class="product-card" data-name="Chocolate Cake">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate and creamy frosting.</p>
+                <h4>Rs. 2,800</h4>
+                <button class="add-btn" data-price="2800">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cupcakes">
+                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80" alt="Cupcakes">
+                <h3>Vanilla Cupcakes</h3>
+                <p>Soft cupcakes with sweet frosting.</p>
+                <h4>Rs. 950</h4>
+                <button class="add-btn" data-price="950">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cheesecake">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80" alt="Cheesecake">
+                <h3>Strawberry Cheesecake</h3>
+                <p>Creamy cheesecake with a fruity finish.</p>
+                <h4>Rs. 2,400</h4>
+                <button class="add-btn" data-price="2400">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Cookies">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Chocolate chip cookies">
+                <h3>Chocolate Cookies</h3>
+                <p>Crunchy edges and soft chocolate centres.</p>
+                <h4>Rs. 600</h4>
+                <button class="add-btn" data-price="600">Add to Cart</button>
+            </div>
+
+        </div>
+        <p id="noResults" hidden>No products found.</p>
+    </section>
+
+    <section class="offer">
+        <div>
+            <p class="script">A little sweetness for your celebration</p>
+            <h2>Birthday Cakes</h2>
+            <p>Make your special moments unforgettable.</p>
+            <a href="#contact" class="btn">Order Your Cake →</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div>
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+                 alt="Fresh bakery pastries">
+        </div>
+        <div>
+            <p class="script">Our little story</p>
+            <h2>Made with Love</h2>
+            <p>At Sweet Haven Bakery, we believe every celebration deserves something sweet. We prepare beautiful cakes, fresh pastries and delicious desserts with care.</p>
+            <a href="#contact" class="btn">Contact Us →</a>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <p class="script">A feast for your eyes</p>
+        <h2>Our Sweet Gallery</h2>
+
+        <div class="gallery-container">
+            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=500&q=80" alt="Cupcakes">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=500&q=80" alt="Cookies">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Fresh bread">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <p class="script">We would love to hear from you</p>
+        <h2>Contact Our Bakery</h2>
+        <p>Have a question or want to order a custom cake?</p>
+
+        <form id="contactForm">
+            <input type="text" id="customerName"
+                   placeholder="Your Name" required>
+            <input type="email" id="customerEmail"
+                   placeholder="Your Email" required>
+            <textarea id="customerMessage"
+                      placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <h2 class="logo">Sweet Haven ♡</h2>
+        <p>Freshly baked with love, every single day.</p>
+        <p>Karachi, Pakistan</p>
+        <p>© <span id="year"></span> Sweet Haven Bakery</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
